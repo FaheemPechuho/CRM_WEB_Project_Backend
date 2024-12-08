@@ -18,7 +18,7 @@ const serve = http.createServer(app);
 app.use(bodyParser.json());
 // Set up CORS
 app.use(cors());
-
+// Set up web socket
 const io = require("socket.io")(serve, {
   cors: {
     origin: "*",
